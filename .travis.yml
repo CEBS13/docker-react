@@ -4,6 +4,5 @@ services:
 
 before_install:
   - docker build -t cebs13/docker-react -f Dockerfile.dev .
-
 script:
-    - docker run ceb13/docker-react npm run test -- --coverage
+    - docker run cebs13/docker-react npm run test -- --coverage
